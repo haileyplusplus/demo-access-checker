@@ -1,6 +1,10 @@
 {
   "groups": [
     {
+      "name": "greenlight-vpn",
+      "description": "VPN for Green Light project"
+    },
+    {
       "name": "greenlight-dev",
       "description": "Dev access to Green light project"
     },
@@ -11,6 +15,10 @@
     {
       "name": "greenlight-oncall",
       "description": "On-call production access to Green light project"
+    },
+    {
+      "name": "oxford-vpn",
+      "description": "VPN for Oxford project"
     },
     {
       "name": "oxford-dev",
