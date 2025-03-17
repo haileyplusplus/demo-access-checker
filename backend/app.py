@@ -25,28 +25,34 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 
+import json
+from pathlib import Path
 from typing import Union
 
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from pydantic import BaseModel
 
-fake_users_db = {
-    "johndoe": {
-        "username": "johndoe",
-        "full_name": "John Doe",
-        "email": "johndoe@example.com",
-        "hashed_password": "fakehashedsecret",
-        "disabled": False,
-    },
-    "alice": {
-        "username": "alice",
-        "full_name": "Alice Wonderson",
-        "email": "alice@example.com",
-        "hashed_password": "fakehashedsecret2",
-        "disabled": True,
-    },
-}
+LOCAL_DIRECTORY = Path(__file__).parent
+
+
+def load_user_config():
+    user_config = LOCAL_DIRECTORY.parent / 'config' / 'users.json'
+    users_db = {}
+    with user_config.open() as fh:
+        users = json.load(fh)['users']
+        for user in users:
+            users_db[user['id']] = {
+                "username": user['id'],
+                "full_name": user['name'],
+                "email": user['id'],
+                "hashed_password": "fakehashedsecret",
+                "disabled": False
+            }
+    return users_db
+
+
+fake_users_db = load_user_config()
 
 app = FastAPI()
 
