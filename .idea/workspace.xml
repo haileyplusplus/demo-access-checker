@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Replace with forked FastAPI example">
+    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Load config from JSON files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
     </list>
@@ -89,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742239685208</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Load config from JSON files">
+      <option name="closed" value="true" />
+      <created>1742241922576</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742241922576</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -97,6 +105,7 @@
     <MESSAGE value="Add basic config examples" />
     <MESSAGE value="Commit boilerplate" />
     <MESSAGE value="Replace with forked FastAPI example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace with forked FastAPI example" />
+    <MESSAGE value="Load config from JSON files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Load config from JSON files" />
   </component>
 </project>
