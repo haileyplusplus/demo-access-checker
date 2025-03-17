@@ -1,0 +1,26 @@
+{
+  "profiles": [
+    {
+      "name": "oxford-config",
+      "description": "Oxford configuration tool",
+      "resources": [
+        "arn:aws:s3:::oxford-bucket-1",
+        "arn:aws:s3:::oxford-bucket-2"
+      ],
+      "permissions": [
+        "group:oxford-oncall"
+      ]
+    },
+    {
+      "name": "greenlight-config",
+      "description": "Green Light configuration tool",
+      "resources": [
+        "arn:aws:s3:::greenlight-bucket-1",
+        "arn:aws:s3:::greenlight-bucket-2"
+      ],
+      "permissions": [
+        "group:greenlight-oncall"
+      ]
+    }
+  ]
+}

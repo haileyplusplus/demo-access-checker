@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "name": "Jay Gatsby",
+      "id": "gatsby@example.com",
+      "groups": ["oxford-dev", "oxford-oncall"]
+    },
+    {
+      "name": "Daisy Buchanan",
+      "id": "daisy@example.com",
+      "groups": ["greenlight-release","greenlight-oncall", "greenlight-dev"]
+    },
+    {
+      "name": "Nick Carraway",
+      "id": "nick@example.com",
+      "groups": ["oxford-oncall", "greenlight-oncall"]
+    }
+  ]
+}

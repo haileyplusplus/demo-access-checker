@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "greenlight-dev",
+      "description": "Dev access to Green light project"
+    },
+    {
+      "name": "greenlight-release",
+      "description": "Release manager access to Green light project"
+    },
+    {
+      "name": "greenlight-oncall",
+      "description": "On-call production access to Green light project"
+    },
+    {
+      "name": "oxford-dev",
+      "description": "Dev access to Oxford project"
+    },
+    {
+      "name": "oxford-release",
+      "description": "Release manager access to Oxford project"
+    },
+    {
+      "name": "oxford-oncall",
+      "description": "On-call production access to Oxford project"
+    }
+  ]
+}
