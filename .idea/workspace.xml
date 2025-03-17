@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Load config from JSON files">
+    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Update to use scopes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
     </list>
@@ -97,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742241922576</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update to use scopes">
+      <option name="closed" value="true" />
+      <created>1742242321889</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742242321889</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -106,6 +114,7 @@
     <MESSAGE value="Commit boilerplate" />
     <MESSAGE value="Replace with forked FastAPI example" />
     <MESSAGE value="Load config from JSON files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Load config from JSON files" />
+    <MESSAGE value="Update to use scopes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update to use scopes" />
   </component>
 </project>

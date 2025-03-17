@@ -68,6 +68,17 @@ def load_user_config():
     return users_db
 
 
+def load_scope_config():
+    scope_config = LOCAL_DIRECTORY.parent / 'config' / 'accessprofiles.json'
+    scopes = {}
+    with scope_config.open() as fh:
+        profiles = json.load(fh)['profiles']
+        for profile in profiles:
+            id_ = profile['name']
+            scopes[id_] = profile['description']
+    return scopes
+
+
 fake_users_db = load_user_config()
 
 
@@ -96,7 +107,7 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 oauth2_scheme = OAuth2PasswordBearer(
     tokenUrl="token",
-    scopes={"me": "Read information about the current user.", "items": "Read items."},
+    scopes=load_scope_config(),
 )
 
 app = FastAPI()
