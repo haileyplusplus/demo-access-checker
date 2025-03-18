@@ -53,14 +53,15 @@ def set_profile(profile_name: str, response: Response):
 
 
 @app.get('/verify-access')
-def verify_access(desired_profile: str, user: Annotated[str | None, Cookie()] = None, profile: Annotated[str | None, Cookie()] = None):
+def verify_access(desired_profile: str):
     checker = AccessChecker()
-    status = checker.verify_access(user, desired_profile)
-    profile_match = desired_profile == profile
+    status = checker.verify_access(state.token_manager, desired_profile)
+    active_profile = state.token_manager.active_profile()
+    profile_match = desired_profile == active_profile
     return {'desired_profile': desired_profile,
-            'current_profile': profile,
+            'current_profile': active_profile,
             'profile_match': profile_match,
-            'user': user,
+            'user': state.token_manager.active_user(),
             'status': status}
 
 

@@ -37,4 +37,11 @@ class TokenManager:
             user_tokens.refresh_group_token(group_name, now - delta)
 
     def active_user(self):
-        pass
+        return self.current_user
+
+    def active_profile(self):
+        if self.current_user is None:
+            return None
+        profile_name, timestamp = self.user_tokens[self.current_user].profile
+        # todo: check expiration
+        return profile_name

@@ -5,8 +5,8 @@ class AccessChecker:
     def __init__(self):
         self.configs = ConfigLoader()
 
-    def verify_access(self, current_user: str, desired_profile: str):
-        user = self.configs.get_users().get(current_user)
+    def verify_access(self, token_manager, desired_profile: str):
+        user = self.configs.get_users().get(token_manager.active_user())
         if not user:
             return 'User does not exist'
         user_groups = set(user['groups'])
