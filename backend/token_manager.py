@@ -28,7 +28,8 @@ class UserTokens:
         for group_name, timestamp in self.tokens.items():
             token_valid_hours = self.configs.get_groups()[group_name]['token_hours']
             expires = timestamp + datetime.timedelta(hours=token_valid_hours)
-            if expires <= now:
+            print(f'Checking token for {group_name} at {now}: valid hours {token_valid_hours} timestamp {timestamp}  expires {expires}')
+            if expires >= now:
                 groups.append(group_name)
         return groups
 

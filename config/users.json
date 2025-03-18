@@ -8,8 +8,7 @@
     {
       "name": "Daisy Buchanan",
       "id": "daisy@example.com",
-      "groups": ["greenlight-release", "greenlight-oncall",
-                 "greenlight-dev", "greenlight-vpn"]
+      "groups": ["greenlight-oncall", "greenlight-dev", "greenlight-vpn"]
     },
     {
       "name": "Nick Carraway",

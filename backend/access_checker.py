@@ -29,12 +29,20 @@ class AccessChecker:
             if permissions_ok:
                 resource_status[resource_name].update({'membership_ok': True})
             else:
+                # If a user doesn't have access to a group it will be impossible to get tokens for it, so the
+                # token check automatically fails and details about it are moot.
                 resource_status[resource_name].update(
-                    {'membership_ok': False, 'needed_group_membership': list(resource_groups)})
+                    {'membership_ok': False,
+                     'needed_group_membership': list(resource_groups),
+                     'tokens_ok': False
+                     })
+                continue
             tokens_ok = resource_groups & current_group_tokens
             if tokens_ok:
                 resource_status[resource_name].update({'tokens_ok': True})
             else:
+                # For a better user experience, only show groups where it's possible for them to get tokens.
+                possible_token_groups = user_groups & resource_groups
                 resource_status[resource_name].update(
-                    {'tokens_ok': False, 'needed_token_membership': list(resource_groups)})
+                    {'tokens_ok': False, 'needed_token_membership': list(possible_token_groups)})
         return resource_status

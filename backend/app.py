@@ -42,32 +42,32 @@ def test_scenario(scenario_number: int):
          'tokens':
             [('greenlight-dev', datetime.timedelta(hours=20))]
          },
-        # All resources present
+        # All resources present for greenlight-prod
         {'profile':
              ('greenlight-prod', datetime.timedelta(hours=7)),
          'tokens':
             [
-                ('greenlight-vpn', datetime.timedelta(hours=1000)),
-                ('greenlight-dev', datetime.timedelta(hours=200)),
+                ('greenlight-vpn', datetime.timedelta(hours=100)),
+                ('greenlight-dev', datetime.timedelta(hours=50)),
                 ('greenlight-oncall', datetime.timedelta(hours=8))
             ],
          'user_name': 'daisy@example.com'},
         # Expired profile
         {'profile':
-             ('greenlight-prod', datetime.timedelta(hours=7)),
+             ('greenlight-prod', datetime.timedelta(hours=18)),
          'tokens':
              [
-                 ('greenlight-vpn', datetime.timedelta(hours=1000)),
-                 ('greenlight-dev', datetime.timedelta(hours=200)),
+                 ('greenlight-vpn', datetime.timedelta(hours=100)),
+                 ('greenlight-dev', datetime.timedelta(hours=50)),
                  ('greenlight-oncall', datetime.timedelta(hours=8))
              ],
          'user_name': 'daisy@example.com'},
-        # Expired tokens
+        # Some expired tokens
         {'profile':
              ('greenlight-prod', datetime.timedelta(hours=7)),
          'tokens':
              [
-                 ('greenlight-vpn', datetime.timedelta(hours=1000)),
+                 ('greenlight-vpn', datetime.timedelta(hours=100)),
                  ('greenlight-dev', datetime.timedelta(hours=200)),
                  ('greenlight-oncall', datetime.timedelta(hours=14))
              ],
