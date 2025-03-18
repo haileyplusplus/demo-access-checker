@@ -8,7 +8,7 @@ app = FastAPI()
 configs = ConfigLoader()
 
 
-@app.get('/cookieset')
+@app.post('/cookieset')
 def cookie_set(arg: str, response: Response):
     #print(response.__dict__)
     response.set_cookie(key="user_scope", value=arg)
@@ -21,7 +21,7 @@ def cookie_test(user_scope: Annotated[str | None, Cookie()] = None):
     return {'cookie': user_scope}
 
 
-@app.get('/set-user')
+@app.post('/set-user')
 def set_user(username: str, response: Response):
     if username not in configs.get_users():
         raise HTTPException(status_code=404, detail=f"User {username} not found.")
@@ -34,7 +34,7 @@ def get_user(user: Annotated[str | None, Cookie()] = None, profile: Annotated[st
     return {'user': user, 'profile': profile}
 
 
-@app.get('/set-profile')
+@app.post('/set-profile')
 def set_profile(profile_name: str, response: Response):
     if profile_name not in configs.get_profiles():
         raise HTTPException(status_code=404, detail=f"Profile {profile_name} not found.")
