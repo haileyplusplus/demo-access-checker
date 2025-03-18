@@ -10,7 +10,7 @@ class AccessChecker:
     def verify_access(self, desired_profile: str):
         user = self.configs.get_users().get(self.token_manager.active_user())
         if not user:
-            return 'User does not exist'
+            return 'No logged in user'
         user_tokens = self.token_manager.active_user_tokens()
         current_group_tokens = set(user_tokens.valid_tokens())
         user_groups = set(user['groups'])
