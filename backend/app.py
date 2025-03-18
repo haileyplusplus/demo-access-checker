@@ -68,3 +68,10 @@ def set_profile(profile_name: str, response: Response):
         raise HTTPException(status_code=404, detail=f"Profile {profile_name} not found.")
     response.set_cookie(key="profile", value=profile_name)
     return {'status': 'ok'}
+
+
+@app.get('/verify-access')
+def verify_access(profile_name: str, user: Annotated[str | None, Cookie()] = None, profile: Annotated[str | None, Cookie()] = None):
+    return {'verify_profile': profile_name,
+            'user': user,
+            'profile': profile}

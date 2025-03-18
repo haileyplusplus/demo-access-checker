@@ -1,0 +1,44 @@
+{
+  "resources": [
+    {
+      "type": "VPN",
+      "name": "oxford-vpn"
+    },
+    {
+      "type": "VPN",
+      "name": "greenlight-vpn"
+    },
+    {
+      "type": "configtool",
+      "name": "greenlight-config-dev"
+    },
+    {
+      "type": "configtool",
+      "name": "greenlight-config-prod"
+    },
+    {
+      "type": "configtool",
+      "name": "oxford-config-dev"
+    },
+    {
+      "type": "configtool",
+      "name": "oxford-config-prod"
+    },
+    {
+      "type": "cloud",
+      "name": "oxford-aws-dev"
+    },
+    {
+      "type": "cloud",
+      "name": "oxford-aws-prod"
+    },
+    {
+      "type": "cloud",
+      "name": "greenlight-aws-dev"
+    },
+    {
+      "type": "cloud",
+      "name": "greenlight-aws-prod"
+    }
+  ]
+}
