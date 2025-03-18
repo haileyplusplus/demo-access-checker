@@ -44,10 +44,12 @@ def set_profile(profile_name: str, response: Response):
 
 
 @app.get('/verify-access')
-def verify_access(profile_name: str, user: Annotated[str | None, Cookie()] = None, profile: Annotated[str | None, Cookie()] = None):
+def verify_access(desired_profile: str, user: Annotated[str | None, Cookie()] = None, profile: Annotated[str | None, Cookie()] = None):
     checker = AccessChecker()
-    status = checker.verify_access(profile_name, user)
-    return {'verify_profile': profile_name,
+    status = checker.verify_access(user, desired_profile)
+    profile_match = desired_profile == profile
+    return {'desired_profile': desired_profile,
+            'current_profile': profile,
+            'profile_match': profile_match,
             'user': user,
-            'profile': profile,
             'status': status}

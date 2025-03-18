@@ -5,14 +5,14 @@ class AccessChecker:
     def __init__(self):
         self.configs = ConfigLoader()
 
-    def verify_access(self, profile_name: str, user_name: str):
-        user = self.configs.get_users().get(user_name)
+    def verify_access(self, current_user: str, desired_profile: str):
+        user = self.configs.get_users().get(current_user)
         if not user:
             return 'User does not exist'
         user_groups = set(user['groups'])
-        profile = self.configs.get_profiles().get(profile_name)
+        profile = self.configs.get_profiles().get(desired_profile)
         if not profile:
-            return 'Profile does not exist'
+            return f'Profile {desired_profile} does not exist'
         necessary_resources = profile['resources']
         resource_status = {}
         for resource_name in necessary_resources:
