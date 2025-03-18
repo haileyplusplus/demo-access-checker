@@ -88,3 +88,7 @@ def test_scenario(scenario_number: int):
         raise HTTPException(status_code=404, detail=f"Scenario {scenario_number} not found.")
     state.token_manager.set_scenario(scenarios[scenario_number])
     return {'status': 'ok'}
+
+
+# Always load a testing scenario on startup so we're never in an invalid state.
+test_scenario(0)
