@@ -36,17 +36,15 @@ class ConfigLoader:
             group_config_json = json.load(fh)['groups']
             for group in group_config_json:
                 id_ = group['name']
-                self.groups[id_] = id_['description']
+                self.groups[id_] = group['description']
 
     def load_resource_config(self):
-        resource_config = self.CONFIG_DIRECTORY / 'groups.json'
+        resource_config = self.CONFIG_DIRECTORY / 'resources.json'
         with resource_config.open() as fh:
             resource_config_json = json.load(fh)['resources']
             for resource in resource_config_json:
-                type_ = resource['type']
                 name = resource['name']
-                permissions = resource['permissions']
-                self.resources.setdefault(type_, {})[name] = permissions
+                self.resources[name] = resource
 
     def get_users(self):
         return self.users

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Add resources and verify access placeholder">
+    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Load groups and resources.">
+      <change afterPath="$PROJECT_DIR$/backend/access_checker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/accessprofiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/accessprofiles.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/resources.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/resources.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/users.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +140,39 @@
       <option name="project" value="LOCAL" />
       <updated>1742307415615</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update more relationships">
+      <option name="closed" value="true" />
+      <created>1742308842568</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742308842568</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Refactor config loading into its own file.">
+      <option name="closed" value="true" />
+      <created>1742309373538</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742309373538</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Use POST for mutable methods.">
+      <option name="closed" value="true" />
+      <created>1742309517707</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1742309517707</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Load groups and resources.">
+      <option name="closed" value="true" />
+      <created>1742310963506</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1742310963506</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -152,6 +186,10 @@
     <MESSAGE value="Add more groups" />
     <MESSAGE value="Remove complexity and add very simple cookie state for testing." />
     <MESSAGE value="Add resources and verify access placeholder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add resources and verify access placeholder" />
+    <MESSAGE value="Update more relationships" />
+    <MESSAGE value="Refactor config loading into its own file." />
+    <MESSAGE value="Use POST for mutable methods." />
+    <MESSAGE value="Load groups and resources." />
+    <option name="LAST_COMMIT_MESSAGE" value="Load groups and resources." />
   </component>
 </project>

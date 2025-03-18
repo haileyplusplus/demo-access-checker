@@ -2,6 +2,7 @@ from typing import Annotated
 
 from fastapi import Cookie, FastAPI, HTTPException, Response
 
+from backend.access_checker import AccessChecker
 from backend.config_loader import ConfigLoader
 
 app = FastAPI()
@@ -44,6 +45,9 @@ def set_profile(profile_name: str, response: Response):
 
 @app.get('/verify-access')
 def verify_access(profile_name: str, user: Annotated[str | None, Cookie()] = None, profile: Annotated[str | None, Cookie()] = None):
+    checker = AccessChecker()
+    status = checker.verify_access(profile_name, user)
     return {'verify_profile': profile_name,
             'user': user,
-            'profile': profile}
+            'profile': profile,
+            'status': status}
