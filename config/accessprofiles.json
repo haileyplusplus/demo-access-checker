@@ -7,7 +7,8 @@
         "oxford-vpn",
         "oxford-config-dev",
         "oxford-aws-dev"
-      ]
+      ],
+      "token_hours": 168
     },
     {
       "name": "oxford-prod",
@@ -19,7 +20,8 @@
       ],
       "permissions": [
         "group:oxford-oncall"
-      ]
+      ],
+      "token_hours": 12
     },
     {
       "name": "greenlight-dev",
@@ -31,7 +33,8 @@
       ],
       "permissions": [
         "group:greenlight-oncall"
-      ]
+      ],
+      "token_hours": 168
     },
     {
       "name": "greenlight-prod",
@@ -43,7 +46,8 @@
       ],
       "permissions": [
         "group:greenlight-oncall"
-      ]
+      ],
+      "token_hours": 12
     }
   ]
 }

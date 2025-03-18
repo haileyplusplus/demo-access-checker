@@ -2,35 +2,43 @@
   "groups": [
     {
       "name": "greenlight-vpn",
-      "description": "VPN for Green Light project"
+      "description": "VPN for Green Light project",
+      "token_hours": 9000
     },
     {
       "name": "greenlight-dev",
-      "description": "Dev access to Green light project"
+      "description": "Dev access to Green light project",
+      "token_hours": 168
     },
     {
       "name": "greenlight-release",
-      "description": "Release manager access to Green light project"
+      "description": "Release manager access to Green light project",
+      "token_hours": 12
     },
     {
       "name": "greenlight-oncall",
-      "description": "On-call production access to Green light project"
+      "description": "On-call production access to Green light project",
+      "token_hours": 12
     },
     {
       "name": "oxford-vpn",
-      "description": "VPN for Oxford project"
+      "description": "VPN for Oxford project",
+      "token_hours": 9000
     },
     {
       "name": "oxford-dev",
-      "description": "Dev access to Oxford project"
+      "description": "Dev access to Oxford project",
+      "token_hours": 168
     },
     {
       "name": "oxford-release",
-      "description": "Release manager access to Oxford project"
+      "description": "Release manager access to Oxford project",
+      "token_hours": 12
     },
     {
       "name": "oxford-oncall",
-      "description": "On-call production access to Oxford project"
+      "description": "On-call production access to Oxford project",
+      "token_hours": 12
     }
   ]
 }
