@@ -4,19 +4,18 @@
       "name": "oxford-dev",
       "description": "Oxford configuration tool",
       "resources": [
-        "arn:aws:s3:::oxford-bucket-1",
-        "arn:aws:s3:::oxford-bucket-2"
-      ],
-      "permissions": [
-        "group:oxford-oncall"
+        "oxford-vpn",
+        "oxford-config-dev",
+        "oxford-aws-dev"
       ]
     },
     {
       "name": "oxford-prod",
       "description": "Oxford configuration tool",
       "resources": [
-        "arn:aws:s3:::oxford-bucket-1",
-        "arn:aws:s3:::oxford-bucket-2"
+        "oxford-vpn",
+        "oxford-config-prod",
+        "oxford-aws-prod"
       ],
       "permissions": [
         "group:oxford-oncall"
@@ -26,8 +25,9 @@
       "name": "greenlight-dev",
       "description": "Green Light configuration tool",
       "resources": [
-        "arn:aws:s3:::greenlight-bucket-1",
-        "arn:aws:s3:::greenlight-bucket-2"
+        "greenlight-vpn",
+        "greenlight-config-dev",
+        "greenlight-aws-dev"
       ],
       "permissions": [
         "group:greenlight-oncall"
@@ -37,8 +37,9 @@
       "name": "greenlight-prod",
       "description": "Green Light configuration tool",
       "resources": [
-        "arn:aws:s3:::greenlight-bucket-1",
-        "arn:aws:s3:::greenlight-bucket-2"
+        "greenlight-vpn",
+        "greenlight-config-prod",
+        "greenlight-aws-prod"
       ],
       "permissions": [
         "group:greenlight-oncall"

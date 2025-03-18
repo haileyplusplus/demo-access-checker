@@ -2,43 +2,75 @@
   "resources": [
     {
       "type": "VPN",
-      "name": "oxford-vpn"
+      "name": "oxford-vpn",
+      "permissions": [
+        "group:oxford-vpn"
+      ]
     },
     {
       "type": "VPN",
-      "name": "greenlight-vpn"
+      "name": "greenlight-vpn",
+      "permissions": [
+        "group:greenlight-vpn"
+      ]
     },
     {
       "type": "configtool",
-      "name": "greenlight-config-dev"
+      "name": "oxford-config-dev",
+      "permissions": [
+        "group:oxford-dev"
+      ]
     },
     {
       "type": "configtool",
-      "name": "greenlight-config-prod"
+      "name": "oxford-config-prod",
+      "permissions": [
+        "group:oxford-release",
+        "group:oxford-oncall"
+      ]
     },
     {
       "type": "configtool",
-      "name": "oxford-config-dev"
+      "name": "greenlight-config-dev",
+      "permissions": [
+        "group:greenlight-dev"
+      ]
     },
     {
       "type": "configtool",
-      "name": "oxford-config-prod"
+      "name": "greenlight-config-prod",
+      "permissions": [
+        "group:greenlight-release",
+        "group:greenlight-oncall"
+      ]
     },
     {
       "type": "cloud",
-      "name": "oxford-aws-dev"
+      "name": "oxford-aws-dev",
+      "permissions": [
+        "group:oxford-dev"
+      ]
     },
     {
       "type": "cloud",
-      "name": "oxford-aws-prod"
+      "name": "oxford-aws-prod",
+      "permissions": [
+        "group:oxford-oncall"
+      ]
     },
     {
       "type": "cloud",
-      "name": "greenlight-aws-dev"
+      "name": "greenlight-aws-dev",
+      "permissions": [
+        "group:greenlight-dev"
+      ]
     },
     {
       "type": "cloud",
-      "name": "greenlight-aws-prod"
+      "name": "greenlight-aws-prod",
+      "permissions": [
+        "group:greenlight-oncall"
+      ]
     }
   ]
 }
