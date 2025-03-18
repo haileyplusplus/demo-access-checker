@@ -36,7 +36,7 @@ class ConfigLoader:
             group_config_json = json.load(fh)['groups']
             for group in group_config_json:
                 id_ = group['name']
-                self.groups[id_] = group['description']
+                self.groups[id_] = group
 
     def load_resource_config(self):
         resource_config = self.CONFIG_DIRECTORY / 'resources.json'

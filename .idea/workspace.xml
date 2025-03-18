@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Manage state with token manager instead of cookies.">
+    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Remove cookies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/access_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/access_checker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/token_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/token_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/users.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742319140395</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Remove cookies">
+      <option name="closed" value="true" />
+      <created>1742319191061</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1742319191061</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -223,6 +235,7 @@
     <MESSAGE value="Check correct profile as well" />
     <MESSAGE value="Add test scenarios, token expiration, and token management." />
     <MESSAGE value="Manage state with token manager instead of cookies." />
-    <option name="LAST_COMMIT_MESSAGE" value="Manage state with token manager instead of cookies." />
+    <MESSAGE value="Remove cookies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove cookies" />
   </component>
 </project>
