@@ -45,3 +45,10 @@ def choose_environment():
 @app.route('/switch-profile')
 def switch_profile():
     return render_template("profile_switcher.html", switch_to=request.args.get('switch_to'))
+
+
+@app.route('/request-tokens')
+def request_tokens():
+    return render_template("request_tokens.html",
+                           desired_profile=request.args.get('desired_profile'),
+                           group=request.args.get('group'))

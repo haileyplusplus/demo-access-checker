@@ -66,12 +66,12 @@
                 {% elif not item.tokens_ok %}
                 Get new access tokens for one of these group(s):
                 {% for group in item.needed_token_membership %}
-                {{ group }},
+                {{ group }} (<a href="/request-tokens?desired_profile={{ access.desired_profile }}&group={{group}}">refresh</a>),
                 {% endfor %}
                 {% elif item.expiring_soon %}
                 (optional) refresh token that's expiring soon:
                 {% for group, expiry in item.expiring_soon.items() %}
-                {{ group }} expires in {{ expiry }}
+                {{ group }} (<a href="/request-tokens?desired_profile={{ access.desired_profile }}&group={{group}}">refresh</a>) expires in {{ expiry }}
                 {% endfor %}
                 {% else %}
                 &nbsp;
