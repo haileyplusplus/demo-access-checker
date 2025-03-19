@@ -12,6 +12,9 @@ frontend and backend. From the root directory:
 % docker compose up --build
 ```
 
+The frontend runs on port 8033, so you can see the web frontend at (for example) 
+http://localhost:8033.
+
 To run the utility outside of Docker, install the Python requirements for both the frontend and 
 backend, change the hardcoded backend destination in the frontend 
 (`BACKEND = 'http://backend:8099'`) to localhost or something else that's suitable, and bring up 
@@ -64,5 +67,5 @@ profiles:
 
 - Scenarios: To simulate various users encountering this tool in a variety of different states, 
   I've created a few scenarios that highlight different states. Among them they should 
-  comprehensively demonstrate all requested features. The /admin path on the frontend (not 
+  comprehensively demonstrate all requested features. The /admin path on the frontend (also 
   linked from the tool) allows scenarios to be toggled as needed.
