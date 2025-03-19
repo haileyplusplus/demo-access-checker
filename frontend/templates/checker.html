@@ -63,6 +63,11 @@
                 {% for group in item.needed_token_membership %}
                 {{ group }},
                 {% endfor %}
+                {% elif item.expiring_soon %}
+                (optional) refresh token that's expiring soon:
+                {% for group, expiry in item.expiring_soon.items() %}
+                {{ group }} expires in {{ expiry }}
+                {% endfor %}
                 {% else %}
                 &nbsp;
                 {% endif %}

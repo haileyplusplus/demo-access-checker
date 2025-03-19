@@ -1,3 +1,5 @@
+import datetime
+
 from backend.config_loader import ConfigLoader
 from backend.token_manager import TokenManager
 
@@ -12,7 +14,7 @@ class AccessChecker:
         if not user:
             return 'No logged in user'
         user_tokens = self.token_manager.active_user_tokens()
-        current_group_tokens = set(user_tokens.valid_tokens())
+        current_group_tokens = user_tokens.valid_tokens()
         user_groups = set(user['groups'])
         profile = self.configs.get_profiles().get(desired_profile)
         if not profile:
@@ -37,9 +39,20 @@ class AccessChecker:
                      'tokens_ok': False
                      })
                 continue
-            tokens_ok = resource_groups & current_group_tokens
+            current_token_group_names = set([x['group_name'] for x in current_group_tokens])
+            expiring_soon = {}
+            for item in current_group_tokens:
+                time_until_expiry = item['time_until_expiry']
+                print(f' time to expiry ', time_until_expiry, item['group_name'])
+                if time_until_expiry < datetime.timedelta(hours=1):
+                    minutes = round(time_until_expiry.total_seconds() / 60)
+                    expiring_soon[item['group_name']] = f'{minutes} minutes'
+            print(current_group_tokens, resource_groups)
+            print(expiring_soon)
+            tokens_ok = resource_groups & current_token_group_names
             if tokens_ok:
-                resource_status[resource_name].update({'tokens_ok': True})
+                resource_status[resource_name].update({'tokens_ok': True,
+                                                       'expiring_soon': expiring_soon})
             else:
                 # For a better user experience, only show groups where it's possible for them to get tokens.
                 possible_token_groups = user_groups & resource_groups
