@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Expose profile information in backend and clean up names.">
-      <change afterPath="$PROJECT_DIR$/frontend/checker_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/start_dev.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/templates/checker.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Start work on frontend.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/checker_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/checker_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/checker.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/checker.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742399927102</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Start work on frontend.">
+      <option name="closed" value="true" />
+      <created>1742400356762</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1742400356762</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -285,6 +291,7 @@
     <MESSAGE value="Update error messages and remove debugging." />
     <MESSAGE value="On second thought, let's keep things simple and use Flask instead of Vue." />
     <MESSAGE value="Expose profile information in backend and clean up names." />
-    <option name="LAST_COMMIT_MESSAGE" value="Expose profile information in backend and clean up names." />
+    <MESSAGE value="Start work on frontend." />
+    <option name="LAST_COMMIT_MESSAGE" value="Start work on frontend." />
   </component>
 </project>

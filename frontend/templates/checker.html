@@ -8,14 +8,69 @@
 <div>
     <h1>Access Checker</h1>
     <form action="/choose-environment" method="post">
-        Choose environment profile:
+        Please select the environment you need to access:
         <select name="envprofile">
             {% for profile in profiles %}
-            <option value="{{ profile.profile_name }}">{{ profile.description }}</option>
+            <option value="{{ profile.profile_name }}"
+                    {% if access and access.desired_profile == profile.profile_name %}
+                    selected
+                    {% endif %}
+            >{{ profile.description }}</option>
             {% endfor %}
         </select>
         <input type="submit"/>
     </form>
 </div>
+<hr/>
+{% if access %}
+<div>
+    User: {{ access.user }}<br>
+    Desired profile: {{ access.desired_profile }}<br>
+    Current profile: {{ access.current_profile }}
+        {% if access.desired_profile == access.current_profile %}
+        ✅
+        {% else %}
+        ❌
+        {% endif %}
+    <br>
+    Resource access: <br>
+    <table>
+        <tr>
+            <th>Resource</th>
+            <th>Status</th>
+            <th>Remediation (if applicable)</th>
+        </tr>
+        {% for key, item in access.status.items() %}
+        <tr>
+            <td>
+                {{ key }}
+            </td>
+            <td>
+                {% if item.membership_ok and item.tokens_ok %}
+                ✅
+                {% else %}
+                ❌
+                {% endif %}
+            </td>
+            <td>
+                {% if not item.membership_ok %}
+                Request membership in one of these group(s):
+                {% for group in item.needed_group_membership %}
+                {{ group }},
+                {% endfor %}
+                {% elif not item.tokens_ok %}
+                Get new access tokens for one of these group(s):
+                {% for group in item.needed_token_membership %}
+                {{ group }},
+                {% endfor %}
+                {% else %}
+                &nbsp;
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}
 </body>
 </html>
