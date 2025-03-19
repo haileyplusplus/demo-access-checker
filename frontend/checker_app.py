@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 
 
-BACKEND = 'http://localhost:8000'
+BACKEND = 'http://backend:8099'
 
 
 @app.route('/')

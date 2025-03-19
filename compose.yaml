@@ -14,3 +14,9 @@ services:
       dockerfile: backend/Dockerfile
     ports:
       - 8099:8099
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - 8033:8033
