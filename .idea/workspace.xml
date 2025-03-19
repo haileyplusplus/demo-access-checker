@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Add profile switcher.">
-      <change afterPath="$PROJECT_DIR$/frontend/templates/request_tokens.html" afterDir="false" />
+    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Add token refresh link.">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/checker_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/checker_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/checker.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/checker.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,8 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Markdown"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -296,11 +295,18 @@
       <option name="project" value="LOCAL" />
       <updated>1742405166518</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Add token refresh link.">
+      <option name="closed" value="true" />
+      <created>1742405698387</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1742405698387</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Replace with forked FastAPI example" />
     <MESSAGE value="Load config from JSON files" />
     <MESSAGE value="Update to use scopes" />
     <MESSAGE value="Load scopes from config" />
@@ -325,6 +331,7 @@
     <MESSAGE value="Add frontend with basic functionality." />
     <MESSAGE value="Propagate token expiry and add warning about tokens expiring soon." />
     <MESSAGE value="Add profile switcher." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add profile switcher." />
+    <MESSAGE value="Add token refresh link." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add token refresh link." />
   </component>
 </project>
