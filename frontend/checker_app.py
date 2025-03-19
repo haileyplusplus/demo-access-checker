@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, abort
+from flask import Flask, render_template, request, abort, redirect
 import requests
 
 
@@ -52,3 +52,21 @@ def request_tokens():
     return render_template("request_tokens.html",
                            desired_profile=request.args.get('desired_profile'),
                            group=request.args.get('group'))
+
+
+@app.route('/admin')
+def admin():
+    scenarios_req = requests.get(f'{BACKEND}/scenarios')
+    if scenarios_req.status_code != 200:
+        abort(scenarios_req.status_code)
+    scenarios = scenarios_req.json()
+    return render_template("scenarios.html", **scenarios)
+
+
+@app.route('/set-scenario', methods=['POST'])
+def set_scenario():
+    scenarios_req = requests.post(f'{BACKEND}/test-scenario',
+                                  params={'scenario_number': request.form.get('scenario')})
+    if scenarios_req.status_code != 200:
+        abort(scenarios_req.status_code)
+    return redirect('/admin')

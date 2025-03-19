@@ -119,6 +119,7 @@ def test_scenario(scenario_number: int):
     """
     Choose among various imagined states of user login and requested resources for testing
     """
+    print(f'scenario number: ', scenario_number)
     if scenario_number < 0 or scenario_number >= len(scenarios):
         raise HTTPException(status_code=404, detail=f"Scenario {scenario_number} not found.")
     state.token_manager.set_scenario(scenarios[scenario_number])

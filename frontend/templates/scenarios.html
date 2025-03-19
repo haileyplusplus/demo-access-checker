@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin interface</title>
+</head>
+<body>
+<h1>Select scenario</h1>
+Current scenario: {{ current_scenario }}<br>
+<br>
+<b>Choose a scenario:</b>
+{% for scenario in scenarios %}
+<form action="/set-scenario" method="post">
+    <input type="hidden" name="scenario" value="{{ loop.index0 }}">
+    <input type="submit" value="{{ scenario }}"><br>
+</form>
+{% endfor %}
+<br>
+<a href="/">Back to Access checker</a>
+</body>
+</html>
