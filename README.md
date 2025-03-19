@@ -1,7 +1,7 @@
 # Access Checker
 
-This is a simple utility to check access for an on-call employee. All example data is 
-manually stored in the config/ subdirectory. 
+This is a simple utility to demonstrate how one might check access for an on-call employee. All 
+example data is manually stored in the config/ subdirectory. 
 
 ## Running
 
