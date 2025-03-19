@@ -40,3 +40,8 @@ def choose_environment():
                            access=access_dict,
                            all_ok=all_ok
                            )
+
+
+@app.route('/switch-profile')
+def switch_profile():
+    return render_template("profile_switcher.html", switch_to=request.args.get('switch_to'))

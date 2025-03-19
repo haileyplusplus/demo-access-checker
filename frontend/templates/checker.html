@@ -33,6 +33,11 @@
         ❌
         {% endif %}
     <br>
+    {% if access.desired_profile != access.current_profile %}
+        Click <a href="/switch-profile?switch_to={{ access.desired_profile }}">here</a> to access the profile switcher tool and switch your profile to {{ access.desired_profile }}.
+        <br>
+    {% endif %}
+
     Resource access: <br>
     <table>
         <tr>

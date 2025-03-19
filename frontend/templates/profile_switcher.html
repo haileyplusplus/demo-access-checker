@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mock of Profile switcher</title>
+</head>
+<body>
+<h1>Profile switcher</h1>
+Mock of tool that switches your profile to {{ switch_to }}.<br>
+
+    <form action="/choose-environment" method="post">
+        <input type="hidden" name="envprofile" value="{{ switch_to }}">
+        <input type="submit" value="Back to access checker"/>
+    </form>
+
+</body>
+</html>
