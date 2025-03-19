@@ -35,7 +35,7 @@ RUN adduser \
 # Leverage a bind mount to requirements.txt to avoid having to copy them into
 # into this layer.
 RUN --mount=type=cache,target=/root/.cache/pip \
-    --mount=type=bind,source=requirements.txt,target=requirements.txt \
+    --mount=type=bind,source=backend/requirements.txt,target=requirements.txt \
     python -m pip install -r requirements.txt
 
 # Switch to the non-privileged user to run the application.
@@ -48,4 +48,4 @@ COPY . .
 EXPOSE 8099
 
 # Run the application.
-CMD uvicorn 'app:app' --host=0.0.0.0 --port=8099
+CMD uvicorn 'backend.app:app' --host=0.0.0.0 --port=8099
