@@ -42,8 +42,10 @@ class TokenManager:
         self.user_tokens = {}
         self.current_user = None
         self.configs = configs
+        self.current_scenario = None
 
     def set_scenario(self, scenario):
+        self.current_scenario = scenario
         now = datetime.datetime.now(tz=datetime.UTC)
         user_name = scenario['user_name']
         self.current_user = user_name

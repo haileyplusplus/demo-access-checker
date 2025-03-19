@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Add token refresh link.">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Add README file.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/token_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/token_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,11 +304,18 @@
       <option name="project" value="LOCAL" />
       <updated>1742405698387</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Add README file.">
+      <option name="closed" value="true" />
+      <created>1742409976381</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1742409976381</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Load config from JSON files" />
     <MESSAGE value="Update to use scopes" />
     <MESSAGE value="Load scopes from config" />
     <MESSAGE value="Add more groups" />
@@ -332,6 +340,7 @@
     <MESSAGE value="Propagate token expiry and add warning about tokens expiring soon." />
     <MESSAGE value="Add profile switcher." />
     <MESSAGE value="Add token refresh link." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add token refresh link." />
+    <MESSAGE value="Add README file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add README file." />
   </component>
 </project>
