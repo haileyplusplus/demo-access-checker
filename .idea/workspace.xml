@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Track active scenario on backend and add getter to show scenarios by name.">
-      <change afterPath="$PROJECT_DIR$/frontend/templates/scenarios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Implement scenario switcher interface.">
       <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/checker_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/checker_app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,11 +323,18 @@
       <option name="project" value="LOCAL" />
       <updated>1742410321275</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Implement scenario switcher interface.">
+      <option name="closed" value="true" />
+      <created>1742411276957</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1742411276957</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Load scopes from config" />
     <MESSAGE value="Add more groups" />
     <MESSAGE value="Remove complexity and add very simple cookie state for testing." />
     <MESSAGE value="Add resources and verify access placeholder" />
@@ -355,6 +359,7 @@
     <MESSAGE value="Add token refresh link." />
     <MESSAGE value="Add README file." />
     <MESSAGE value="Track active scenario on backend and add getter to show scenarios by name." />
-    <option name="LAST_COMMIT_MESSAGE" value="Track active scenario on backend and add getter to show scenarios by name." />
+    <MESSAGE value="Implement scenario switcher interface." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement scenario switcher interface." />
   </component>
 </project>

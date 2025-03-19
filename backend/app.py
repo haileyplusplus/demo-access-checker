@@ -42,7 +42,7 @@ def get_access_profiles():
 
 scenarios = [
     # Missing resources
-    {'scenario_name': 'Missing resources',
+    {'scenario_name': 'Missing resources in greenlight-dev',
      'user_name': 'daisy@example.com',
      'profile':
          ('greenlight-dev', datetime.timedelta(hours=100)),
@@ -61,7 +61,7 @@ scenarios = [
         ],
      'user_name': 'daisy@example.com'},
     # Expired profile
-    {'scenario_name': 'Expired profile',
+    {'scenario_name': 'Expired profile in greenlight-prod',
      'profile':
          ('greenlight-prod', datetime.timedelta(hours=18)),
      'tokens':
@@ -72,7 +72,7 @@ scenarios = [
          ],
      'user_name': 'daisy@example.com'},
     # Some expired tokens
-    {'scenario_name': 'Some expired tokens',
+    {'scenario_name': 'Some expired tokens in greenlight-prod',
      'profile':
          ('greenlight-prod', datetime.timedelta(hours=7)),
      'tokens':
@@ -83,7 +83,7 @@ scenarios = [
          ],
      'user_name': 'daisy@example.com'},
     # Group membership missing
-    {'scenario_name': 'Group membership missing',
+    {'scenario_name': 'Group membership missing in oxford-dev',
      'profile':
          ('oxford-dev', datetime.timedelta(hours=7)),
      'tokens':
