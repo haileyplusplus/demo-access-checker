@@ -2,7 +2,7 @@
   "profiles": [
     {
       "name": "oxford-dev",
-      "description": "Oxford configuration tool",
+      "description": "Oxford Dev",
       "resources": [
         "oxford-vpn",
         "oxford-config-dev",
@@ -12,7 +12,7 @@
     },
     {
       "name": "oxford-prod",
-      "description": "Oxford configuration tool",
+      "description": "Oxford Prod",
       "resources": [
         "oxford-vpn",
         "oxford-config-prod",
@@ -25,7 +25,7 @@
     },
     {
       "name": "greenlight-dev",
-      "description": "Green Light configuration tool",
+      "description": "Green Light Dev",
       "resources": [
         "greenlight-vpn",
         "greenlight-config-dev",
@@ -38,7 +38,7 @@
     },
     {
       "name": "greenlight-prod",
-      "description": "Green Light configuration tool",
+      "description": "Green Light Prod",
       "resources": [
         "greenlight-vpn",
         "greenlight-config-prod",

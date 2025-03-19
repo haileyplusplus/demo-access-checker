@@ -32,6 +32,14 @@ def verify_access(desired_profile: str):
             'status': status}
 
 
+@app.get('/get-access-profiles')
+def get_access_profiles():
+    profiles = []
+    for k, v in state.configs.get_profiles().items():
+        profiles.append({'profile_name': k, 'description': v['description']})
+    return {'profiles': profiles}
+
+
 @app.post('/test-scenario')
 def test_scenario(scenario_number: int):
     scenarios = [
