@@ -1,8 +1,26 @@
 # Access Checker
 
 This is a simple utility to check access for an on-call employee. All example data is 
-manually stored in the config/ subdirectory. I've made the following assumptions in
-constructing these users, groups, resources, and access profiles:
+manually stored in the config/ subdirectory. 
+
+## Running
+
+The recommended way to run this utility is with docker compose, which will bring up both the 
+frontend and backend. From the root directory:
+
+```
+% docker compose up --build
+```
+
+To run the utility outside of Docker, install the Python requirements for both the frontend and 
+backend, change the hardcoded backend destination in the frontend 
+(`BACKEND = 'http://backend:8099'`) to localhost or something else that's suitable, and bring up 
+the frontends and backends.
+
+## Notes
+
+I've made the following assumptions in constructing these users, groups, resources, and access
+profiles:
 
 - Access profiles can represent a complete group of resources or permissions that are 
   needed to enable a certain workflow. These access profiles are considered to be roughly 

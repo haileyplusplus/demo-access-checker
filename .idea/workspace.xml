@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Add frontend docker init boilerplate.">
-      <change afterPath="$PROJECT_DIR$/frontend/requirements.txt" afterDir="false" />
+    <list default="true" id="96430043-90a7-4265-8be9-3b13f36d8da7" name="Changes" comment="Add docker config for frontend.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/checker_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/checker_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/README.Docker.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -377,11 +374,18 @@
       <option name="project" value="LOCAL" />
       <updated>1742411750110</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Add docker config for frontend.">
+      <option name="closed" value="true" />
+      <created>1742412114595</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1742412114595</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Use POST for mutable methods." />
     <MESSAGE value="Load groups and resources." />
     <MESSAGE value="Add simple verification." />
     <MESSAGE value="Check correct profile as well" />
@@ -406,6 +410,7 @@
     <MESSAGE value="Move compose.yaml to top level so we can combine frontend and backend in one compose file." />
     <MESSAGE value="Run backend in a docker container." />
     <MESSAGE value="Add frontend docker init boilerplate." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add frontend docker init boilerplate." />
+    <MESSAGE value="Add docker config for frontend." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add docker config for frontend." />
   </component>
 </project>
