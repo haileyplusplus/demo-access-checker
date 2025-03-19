@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Access Checker</title>
+</head>
+<body>
+<div>
+    <h1>Access Checker</h1>
+    <form action="/choose-environment" method="post">
+        Choose environment profile:
+        <select name="envprofile">
+            {% for profile in profiles %}
+            <option value="{{ profile.profile_name }}">{{ profile.description }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit"/>
+    </form>
+</div>
+</body>
+</html>
